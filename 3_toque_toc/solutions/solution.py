@@ -1,14 +1,16 @@
+from collections import defaultdict
+import string
+
 def tidy_up(recipe):
 	"""Take a word and give a symmetric version with the same letters, or "-".
 	"""
-	alphabet = "abcdefghijklmnopqrstuvwxyz"
-	occurences = {letter: 0 for letter in alphabet}
+	occurences = defaultdict(int)
 	for letter in recipe:
 		occurences[letter] += 1
 
 	odd = ""
 	left = ""
-	for letter in alphabet:
+	for letter in string.ascii_lowercase:
 		if occurences[letter] % 2:
 			if odd:
 				return "-" # there can be at most one letter in odd number
@@ -20,7 +22,5 @@ def tidy_up(recipe):
 
 
 N = int(input())
-recipes = [input() for _ in range(N)]
-
-for recipe in recipes:
-	print(tidy_up(recipe))
+for recipe in range(N):
+	print(tidy_up(input()))
