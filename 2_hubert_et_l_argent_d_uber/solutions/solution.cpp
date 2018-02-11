@@ -17,7 +17,7 @@ int main() {
 	cin >> M;
 	for(int i = 0; i < M; i++) {
 		cin >> data_str >> data_int;
-		price.insert(pair<string, int>(data_str, data_int));
+		price[data_str] = data_int;
 	}
 
 	cin >> N;
