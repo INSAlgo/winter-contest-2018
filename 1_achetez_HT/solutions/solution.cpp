@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -11,9 +12,7 @@ int main() {
 	// Therefore H = P / (1 + T/100)
 	H = P / (1 + T/100);
 
-	cout << fixed;
-	cout.precision(2);
-	cout << H << endl;
+	cout << fixed << setprecision(2) << H << endl;
 
 	return 0;
 }
