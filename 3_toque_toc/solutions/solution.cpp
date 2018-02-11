@@ -2,34 +2,35 @@
 #include <string>
 #include <map>
 #include <algorithm>
+#include <iterator>
 using namespace std;
 
 string tidy_up(string recipe) {
-	string alphabet = "abcdefghijklmnopqrstuvwxyz";
 	map<char, int> occurences;
 	for(int i = 0; i < 26; i++) {
-		occurences.insert(pair<char, int>(alphabet[i], 0));
+		occurences['a' + i] = 0;
 	}
-	for(int i = 0; i < recipe.size(); i++) {
+	for(size_t i = 0; i < recipe.size(); i++) {
 		occurences[recipe[i]] += 1;
 	}
 
-	string odd = "";
-	string left = "";
-	left.reserve(recipe.size() / 2);
+	string odd;
+	string left;
+	left.reserve(10000);
 	for(int i = 0; i < 26; i++) {
-		if(occurences[alphabet[i]] % 2) {
+	    const char current = 'a' + i;
+		if(occurences[current] % 2) {
 			if(odd.size())
 				return "-";
 			else
-				odd += alphabet[i];
+				odd += current;
 		}
-		left.resize(left.size() + occurences[alphabet[i]] / 2, alphabet[i]);
+		left.resize(left.size() + occurences[current] / 2, current);
 	}
 
-	string right = left;
-	reverse(right.begin(), right.end());
-	return left + odd + right;
+    left += odd;
+	copy(odd.size() ? next(left.rbegin()) : left.rbegin(), left.rend(), back_inserter(left));
+	return left;
 }
 
 int main() {
