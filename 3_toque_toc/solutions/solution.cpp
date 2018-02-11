@@ -16,6 +16,7 @@ string tidy_up(string recipe) {
 
 	string odd = "";
 	string left = "";
+	left.reserve(recipe.size() / 2);
 	for(int i = 0; i < 26; i++) {
 		if(occurences[alphabet[i]] % 2) {
 			if(odd.size())
