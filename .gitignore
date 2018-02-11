@@ -1,0 +1,19 @@
+# Python #
+##########
+__pycache__
+
+# C++ #
+#######
+*.slo
+*.lo
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# Java #
+########
+*.class
+*.log
+*.jar
