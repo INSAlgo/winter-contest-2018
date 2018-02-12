@@ -15,13 +15,13 @@ int main() {
 	set<int> prices;
 
 	cin >> data_float;
-	B = 100 * data_float;
+	B = 100 * data_float + 0.01;
 
 	cin >> N;
 
 	for(int i = 0; i < N; i++) {
 		cin >> data_string >> data_float;
-		prices.insert(100 * data_float);
+		prices.insert(100 * data_float + 0.01);
 	}
 
 	bool possible[B+1];
