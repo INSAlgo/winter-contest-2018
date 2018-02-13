@@ -44,7 +44,7 @@ def main():
             proportion += a_start - prev_max
         if a_end > prev_max:
             prev_max = a_end
-    proportion += pi/2 - a_end
+    proportion += pi/2 - prev_max
 
     return 2 * proportion / pi
     
