@@ -1,0 +1,10 @@
+name: "b_hubert_et_l_argent_d_uber"
+title: "B. Hubert et l'argent d'UBER"
+time_limit: 1
+memory_limit: 100
+n_input: 16
+public_testcases: 0, 1, 2, 3, 4
+infile: ""
+outfile: ""
+token_mode: disabled
+primary_language: "fr"
