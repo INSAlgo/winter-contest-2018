@@ -17,3 +17,11 @@ __pycache__
 *.class
 *.log
 *.jar
+
+# CMS #
+#######
+.itime_contest
+.itime
+.import_error
+contestants.csv
+
