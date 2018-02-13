@@ -3,7 +3,7 @@ title: "B. Hubert et l'argent d'UBER"
 time_limit: 1
 memory_limit: 100
 n_input: 16
-public_testcases: 0, 1, 2, 3, 4
+public_testcases: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 infile: ""
 outfile: ""
 token_mode: disabled
