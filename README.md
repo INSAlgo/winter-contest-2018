@@ -14,7 +14,7 @@ Résumé des problèmes par ordre de difficulté :
 
 ## Comment tester avec les entrées / sorties fournies
 
-La plateforme de la Coding Battle ne sera pas relancée. Cela est dû à plusieurs raisons : nous sommes une association étudiante dont l'organisation de concours n'est pas le motif principal et cela demanderait trop de temps ; pour des raisons de coûts, une telle infrastructure a un prix ; parce que vous n'en avez pas besoin ! 😉
+La plateforme du Winter Contest ne sera pas relancée. Cela est dû à plusieurs raisons : nous sommes une association étudiante dont l'organisation de concours n'est pas le motif principal et cela demanderait trop de temps ; pour des raisons de coûts, une telle infrastructure a un prix ; parce que vous n'en avez pas besoin ! 😉
 
 Pour tester vos solutions, vous pouvez utiliser la redirection de flux dans un terminal. Par exemple, sous Linux (sous Windows la syntaxe est similaire, et l'Internet foisonne de tutoriels et de posts de forum à ce propos) :
 
